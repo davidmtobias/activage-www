@@ -1,0 +1,23 @@
+     <!--Content-->
+     <section>
+      <article class="narrow">
+	  <%- page.content %>
+      </article>
+  	 </section>
+
+<div class="ds-links">
+	<% for (var i in theme.ds_links){ %>
+		<%if (theme.ds_links[i]=="RER"){
+				var link_name = "Region Emilia Romana";
+				var link = "Region-Emilia-Romana";
+			}else{
+				var link_name = theme.ds_links[i];
+				var link = theme.ds_links[i];
+			}%>
+
+		<a href="/deployment-sites/<%=link%>" 
+			style="background-image: url('/images/deployment-sites/cities/<%=theme.ds_links[i].toUpperCase()%>_IoT.jpg')">
+			<span><%=link_name%></span>
+    </a>
+  <% } %>
+</div>

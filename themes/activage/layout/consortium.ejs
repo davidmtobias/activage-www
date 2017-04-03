@@ -1,0 +1,31 @@
+<section>
+ <div class="partners-title w3-row-padding">
+		<h1 class="w3-col l5 partners">
+		Distribution map.<br>
+		49 partners.<br>
+		7 countries.<br>
+		</h1>
+		<img class="w3-col l7 w3-image" src="/images/consortium/mapa-partners-v290317.png"></a>
+  </div>
+
+
+
+
+
+	<div class="partners">
+	  <% for (var i in config.consortium){ %>
+			<a class="partner <%=config.consortium[i][3]%>" href="<%=config.consortium[i][5]%>" target="_blank">
+			<div class="logo w3-display-container">
+					<img class="w3-image w3-display-middle" src="/images/consortium/logos/<%=config.consortium[i][6]%>">
+			</div>
+			<div class="foot">
+				<div class="tipo"><%=config.consortium[i][2].toUpperCase()%></div>	
+		  	<div class="name <%if(config.consortium[i][0]==16 || config.consortium[i][0]==22){%>small<%}%>"> <%=config.consortium[i][1].toUpperCase()%></div>		
+			</div>
+		</a>
+
+
+		<%}%>
+	</div>
+
+</section>

@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+#He modificado los estilos de hexo-admin para customizarlo
+!/node_modules/hexo-admin
+public/
+.deploy*/

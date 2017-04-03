@@ -1,0 +1,150 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+## 30/03/2017 => No me cogía los post. He tenido que crear un nuevo hexo, y copiar su _config.yml a este
+# Solo se me ocurre que he introducido caracteres extraños y no lo procesaba bien. Raro.
+
+# Site
+title: Hexo
+subtitle:
+description:
+author: John Doe
+language: en
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+permalink: /blog/:year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: blog/tags
+archive_dir: blog/archives
+category_dir: blog/categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+#Index generator
+index_generator:
+  path: /blog
+  per_page: 10
+  order_by: -date 
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: activage
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
+
+# hexo-admin authentification 9012holahola
+admin:
+  username: activame
+  password_hash: $2a$10$VRa.ThkaexPua3COQT9Xf.giPgbMUiAIFYZ58tbFoDcmRRLj4RfDa
+  secret: my super secret phrase
+
+#Consortium
+consortium: [
+  [1,'Medtronic Ibérica S.A (Coordinator)','Industry','industry','ES','http://www.medtronic.com/es-es/','1_Medtronic_Iberica.png' ],
+  [2,'ST Microelectronics ','Industry','industry','FR','http://www.st.com/content/st_com/en.html','2.ST Microelectronics.png' ],
+  [3,'Televes SA','Industry','industry','ES','http://www.televes.com/en/eng/home','3.Televes SA.png' ],
+  [9,'IBM Research GMBH','Industry','industry','CH','http://research.ibm.com/','9.IBM_Research_Logo.png' ],
+  [10,'CUP 2000 SPA','Industry','industry','IT','http://www.cup2000.it/en/frontpage-en/','10.LOG_CUP2000.png' ],
+  [20,'Samsung Electronics (UK) Limited','Industry','industry','IE','http://www.samsung.com/uk/home/','20.SAMSUNG.png' ],
+  [27,'WIND TRE Telecomunicazioni S.P.A.','Industry','industry','IT','http://www.wind.it/it/privati/','27.WIND_TRE.png' ],
+  [30,'Inter Mutuelles Assistance (IMA)','Industry','industry','FR','http://ima.eu/fr/accueil.php','30.IMA.png' ],
+  [33,'AJT Wohn- und Quartierzentrums GmbH & Co KG (WOQUAZ)','Industry','industry','DE','http://www.woquaz.com/','33.WOQUAZ.jpg' ],
+  [34,'SageLiving GmbH','Industry','industry','DE', 'https://www.sageliving.de','34.SAGE_LIVING.jpg' ],
+
+  
+  [5,'Universidad Politécnica de Madrid (UPM)','Academia','academia','ES','http://www.upm.es/internacional','5.Universidad Politécnica de Madrid.png' ],
+  [11,'Universitat Politecnica de Valencia','Academia','academia','ES','https://www.upv.es/index-en.html','11.UNIVERSIDA POLITECNICA DE VALENCIA.png' ],
+  [25,'Universita degli Studi di Parma','Academia','academia','IT','http://en.unipr.it/','25.UNI_PARMA.png' ],
+  [46,'Turku University of applied Sciences','Academia','academia','FI','http://www.tuas.fi/en/','46.Turku University.png' ],
+  [48,'University of Surrey','Academia','academia','UK','https://www.surrey.ac.uk/','48.UNIVERSITY OF SURREY.png' ],
+
+
+  [6,'Fraunhofer-Gesellschaft ','Research Entity','research','DE','https://www.igd.fraunhofer.de/en/competences/technologien/smart-living','6.FRAUNHOFER.png' ],
+  [7,'Commissariat a L Energie Atomique et aux Energies Alternatives (CEA)','Research Entity','research','FR','http://www.cea.fr/english','7.CEA.png' ],
+  [8,'Centre for Research & Technology HELLAS (CERTH)','Research Entity','research','GR','http://www.imet.gr/','8.CERTH.png' ],
+  [13,'National University of Ireland,alway','Research Entity','research','IE','http://www.nuigalway.ie/','13.National University of Ireland.png' ],
+  [15,'Fundacion Tecnalia Research & Innovation','Research Entity','research','ES','http://www.tecnalia.com/en/','15.TECNALIA.jpg' ],
+  [16,'Centre Expert en Technologies et Services pour le Maintien en Autonomie a Domicile des Personnes Agees (MADOPA)','Research Entity','research','FR','http://www.madopa.fr/madopa-missions/?lang=en','16.MADOPA.PNG' ],
+  [19,"Centre Suisse D'electronique et de Microtechnique sa (CSEM)",'Research Entity','research','CH','https://www.csem.ch/home','19.CSEM-01.png' ],
+  [23,'Consiglio Nazionale Delle Ricerche','Research Entity','research','IT','https://www.cnr.it/en','23.Consiglio Nazionale Delle Ricerche.svg' ],
+  [42,'Institute Of Communication and Computer Systems','Research Entity','research','GR','http://www.iccs.gr/en/','42.ICCS.png' ],
+
+
+  [4,'TSB - MSYPHERA','SME','sme','ES','http://mysphera.com/','4.TSB-MYSPHERA.png' ],
+  [21,'Tercera Edad Activa SL','SME','sme','ES','https://app.terceraedadactiva.com/company.php','21.TERCERA EDAD ACTIVA.png' ],
+  [12,'HOP UBIQUITOUS SL','SME','sme','ES','http://www.hopu.eu/','12.HOPU.png' ],
+  [14,'MEDEA SRL','SME','sme','IT' ],
+  [28,'TECHNOSENS','SME','sme','FR','http://www.technosens.fr/index.php','28.TECHNOSENS.PNG' ],
+  [32,'Servicios de Teleasistencia,.A. (ATENZIA)','SME','sme','ES','http://www.atenzia.com/en/','32.ATENZIA.png' ],
+  [36,'Gestio Sociosanitaria al Mediterrani SL (GESMED)','SME','sme','ES','http://www.gesmed.es/','36.GESMED.png' ],
+  [38,'GNOMON Informatics SA','SME','sme','GR','http://www.gnomon.com.gr/','38.GNOMON.png' ],
+  [40,'Efarmoges Exypnou Logismikou Kykloforias & Metaforon AE (INFOTRIP)','SME','sme','GR',' http://www.infotrip.gr/en/Home/tabid/166/Default.aspx','40.INFOTRIP.png' ],
+  [43,'SE Innovations Oy','SME','sme','FI','http://www.seniorsome.com/','43.SE Innovations Oy.png' ],
+  [44,'GoodLife Technology','SME','sme','FI','http://www.goodlife.technology/','44.GoodLife Technology.jpg' ],
+  [45,'eHOIVA','SME','sme','FI','http://www.ehoiva.fi/in-english/','45.EHOIVA.jpg' ],
+  [49,'ISI Bienestar','SME','sme','ES', 'http://www.isibenestar.com/', '49.ISIBENESTAR.png' ],
+
+
+  [17,'Fundacion Vodafone Espana','Other','other','ES','http://www.fundacionvodafone.es/','17.FUNDACIÓN VODAFONE ESPAÑA.jpg' ],
+  [18,'Cruz Roja Española','Other','other','ES','http://www.cruzroja.es/principal/web/cruz-roja/inicio','18.CRUZ ROJA ESPAÑOLA.jpg' ],
+  [26,'Aurora Domus Cooperativa Sociale Onlus ','Other','other','IT','https://www.auroradomus.it/','26.AURORADOMUS.png' ],
+  [31,'Institut du Bien Vieillir and KORIAN','Other','other','FR','http://www.institutdubienvieillirkorian.org/','31.KORIAN.png' ],
+  [39,'Municipality of Metamorfosis','Other','other','GR','http://www.metamorfossi.gr/','39.MUNICIPALITY OF METAMORFOSIS.png' ],
+  [41,'Municipality of Pilea-Hortiatis','Other','other','GR','http://www.pilea-hortiatis.gr/web/guest/home','41.Municipality of Pileas.jpg' ],
+
+
+  [22,'Fundacion de la Comunitat Valenciana para la Promocion Estrategica el Desarrollo y la Innovacion Urbana (InnDEA)','Public Entity','public','ES','http://inndeavalencia.com/en/','22.InnDEA.png' ],
+  [24,'Azienda USL di Parma','Public Entity','public','IT','http://www.ausl.pr.it/','24.Azienda USL di Parma.JPG' ],
+  [29,"Departement de L'isere",'Public Entity','public','FR','https://www.isere.fr/',"29.Departement de L'isere.png" ],
+  [35,'Servizo Galego de Saude (SERGAS)','Public Entity','public','ES','http://www.sergas.es/Portada?idioma=es','35.SERGAS.png' ],
+  [37,'Digital Cities of Central Greece (Cities Net)','Public Entity','public','GR','http://dccg.gr/','37.CitiesNet.jpg' ],
+  [47,'Leeds City Council','Public Entity','public','UK','http://www.leeds.gov.uk/Pages/Default.aspx','47.LEEDS CITY COUNCIL.png' ]
+]
+
+

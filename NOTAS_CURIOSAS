@@ -1,0 +1,3 @@
+NOTAS PARA EL DESPLIGUE:
+
+1) Para poner una root page he tenido que desinstalar hexo-generator-index y crear un index.md en source

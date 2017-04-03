@@ -1,0 +1,40 @@
+# Header
+ 
+rss:
+
+# Content
+excerpt_link: Read More
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+#- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics: UA-91913266-1
+favicon: /images/favicon.ico
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+#Less
+less:
+  compress: true
+
+#Deployment sites
+ds_links: ["Galicia", "Valencia", "Madrid", "RER", "Greece", "Grenoble", "Woquaz", "Leeds", "Finland"]

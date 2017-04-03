@@ -1,0 +1,105 @@
+
+  <!-- Navbar -->
+  <div class="header w3-top"> <!--w3-top to fix-->
+   <div class="content"> 
+    
+    <div class="content-top"> 
+      <div class="logo"> <a href="<%- url_for() %>"><img class="w3-image" src="/images/general/activage-logo.png"></a></div>
+    
+      <div class="social w3-hide-medium w3-hide-small">
+        <%-social("twitter")%>
+        <%-social("facebook")%>
+        <%-social("linkedin")%>
+      </div>
+      <!--Hamburguer for small devices-->
+      <div class="w3-hide-large w3-opennav hamburguer-icon">
+        <a class="w3-padding-large" href="javascript:void(0)" onclick="navbarSmall()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+
+<ul class="menu">
+  
+  <!--Menu elements for large and medium devices-->
+  <li class="w3-dropdown-hover w3-hide-medium w3-hide-small">
+    <span <%if (page.section == "ACTIVAGE PROJECT" ) {%>class="selected"<%}%>>THE PROJECT</span>
+    <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+      <li><a href="/activage-project#About-ACTIVAGE" class="w3-bar-item w3-button">About ACTIVAGE</a></li>
+      <li><a href="/activage-project#ACTIVAGE-vision" class="w3-bar-item w3-button">ACTIVAGE Vision</a></li>
+      <li><a href="/activage-project#ACTIVAGE-objectives" class="w3-bar-item w3-button">ACTIVAGE Objectives</a></li>
+      <li><a href="/activage-project#Project-Structure" class="w3-bar-item w3-button">Project Structure </a></li>
+    </ul>
+  </li>
+
+  <li class="w3-dropdown-hover w3-hide-medium w3-hide-small">
+    <span <%if (page.section == "DEPLOYMENT SITES" ) {%>class="selected"<%}%>>DEPLOYMENT SITES</span>
+    <ul class="w3-dropdown-content w3-bar-block w3-card-4" style="width: 220px;">
+      <li><a href="/deployment-sites" class="w3-bar-item w3-button">Introduction</a></li>
+      <li><a href="/deployment-sites/Galicia" class="w3-bar-item w3-button">DS Galicia</a></li>
+      <li><a href="/deployment-sites/Valencia" class="w3-bar-item w3-button">DS Valencia</a></li>
+      <li><a href="/deployment-sites/Madrid" class="w3-bar-item w3-button">DS Madrid</a></li>
+      <li><a href="/deployment-sites/Region-Emilia-Romagna" class="w3-bar-item w3-button">DS Region Emilia Romagna</a></li>
+      <li><a href="/deployment-sites/Greece" class="w3-bar-item w3-button">DS Greece</a></li>
+      <li><a href="/deployment-sites/Grenoble" class="w3-bar-item w3-button">DS Grenoble</a></li>
+      <li><a href="/deployment-sites/Woquaz" class="w3-bar-item w3-button">DS Woquaz</a></li>
+      <li><a href="/deployment-sites/Leeds" class="w3-bar-item w3-button">DS Leeds</a></li>
+      <li><a href="/deployment-sites/Finland" class="w3-bar-item w3-button">DS Finland</a></li>
+    </ul>
+  </li>
+
+  <!--li class="w3-hide-medium w3-hide-small">
+    <a <%if (page.section == "NEWS" ) {%>class="selected"<%}%> href="/news">NEWS</a>
+  </li-->
+  
+  <!--li class="w3-hide-medium w3-hide-small">
+    <a <%if (page.section == "PUBLICATIONS" ) {%>class="selected"<%}%> href="/publications">PUBLICATIONS</a>
+  </li-->
+
+  <!--li class="w3-dropdown-hover w3-hide-medium w3-hide-small">
+    <span>COMMUNICATION ROOM</span>
+    <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+      <li><a href="/communication-room/gallery" class="w3-bar-item w3-button">Gallery</a></li>
+      <li><a href="/communication-room/events-and-meetings" class="w3-bar-item w3-button">Events and meetings</a></li>
+      <li><a href="/communication-room/download" class="w3-bar-item w3-button">Download</a></li>
+      <li><a href="/communication-room/video" class="w3-bar-item w3-button">Video</a></li>
+    </ul>
+  </li-->
+  <li class="w3-hide-medium w3-hide-small">
+    <a href="/blog" <%if (page.section == "BLOG" ){%>class="selected"<%}%>>BLOG</a>
+  </li>
+
+  <li class="w3-hide-medium w3-hide-small">
+    <a <%if (page.section == "CONSORTIUM" ){%>class="selected"<%}%> href="/consortium">CONSORTIUM</a>
+  </li>
+
+  <li class="w3-hide-medium w3-hide-small">
+    <a <%if (page.section == "OPEN CALL" ){%>class="selected"<%}%> href="/open-call">OPEN CALL</a>
+  </li>
+      
+  <li class="w3-hide-medium w3-hide-small">
+    <a <%if (page.section == "CONTACT" ){%>class="selected"<%}%> href="<%- url_for("/contact") %>">CONTACT</a>
+  </li>
+</ul>
+   
+
+   </div>
+  </div>  
+
+  <!-- Navbar on small screens -->
+  <div id="navbar-small" class="w3-hide w3-hide-large w3-animate-left header-small">
+    <ul>
+      <li><a href="/activage-project">ACTIVAGE PROJECT</a></li>  
+      <li><a href="/deployment-sites">DEPLOYMENT SITES</a></li>  
+      <li><a href="/blog">BLOG</a></li>  
+      <li><a href="/consortium">CONSORTIUM</a></li>  
+      <li><a href="/open-call">OPEN CALL</a></li>  
+      <li><a href="/contact">CONTACT</a></li>
+      <li class="social">
+        <%-social("twitter")%>
+        <%-social("facebook")%>
+        <%-social("linkedin")%>
+      </li>  
+    </ul>
+  </div>

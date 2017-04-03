@@ -1,0 +1,437 @@
+/**
+* less/general.less
+*
+*/
+
+//Colores
+@colorPrincipal:#02A8E0;
+@colorLink: #000000;
+@colorLinkHover: #02A8E0;
+
+@colorGrey50: #FAFAFA;
+@colorGrey100: #F5F5F5;
+@colorGrey200: #EEEEEE;
+
+@colorBorders: @colorGrey200;
+
+@colorIndustry: #2fb388;
+@colorAcademia: #cc5e42;
+@colorResearch: #fbcc52;
+@colorOther: #75cddb;
+@colorSme: #ad208d;
+@colorPublic: #15a8e0;
+
+
+//General
+body, h1, h2, h3, h4, h5, h6 {
+	padding: 0; margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; //Regular
+  //Tratamos de hacer la font responsive
+  //font-size: 100%; //Sore 16px es la referencia
+  font-size: 16px;
+	line-height: 1.6875;
+
+} 
+
+
+@media (min-width: 100px) {
+body { font-size:80%;}
+}
+@media (min-width: 800px) {
+body { font-size:100%;}
+} 
+
+@media (min-width: 1100px) {
+body { font-size:100%;}
+}
+
+
+ul{ list-style: none; margin: 0; padding: 0;}
+
+img{padding: 0; margin: 0;}
+
+a{color: @colorLink; text-decoration: none;
+	&:hover{color: @colorLinkHover;}
+}
+
+//Header
+.header{ 
+	padding-left: 15px; padding-right: 15px; //Para que al resize screen no se pegue al border
+	min-height: 180px;  
+	background-color: #fff; padding-top: 30px; border-bottom: 1px solid @colorBorders;
+	.content-top{overflow: hidden;}
+	.content{ 
+		//overflow: hidden; 
+		max-width: 1100px; margin: 0 auto;
+		
+		.logo{float: left; a{img{max-width: 180px;}}}
+		.social{ float: right; 
+				a{margin-right: 0px; padding: 0px;
+					img{ max-width: 35px;}
+				}
+		}
+		
+		.hamburguer-icon{float: right;
+			i{font-size: 30px;}
+		}	
+
+		ul.menu{
+			//overflow: hidden;  
+			float: left; 
+			//height: 80px; 
+			padding-top: 30px;
+			li{background-color: #fff; &:hover{background-color: none;} }
+			li{float: left; margin-right: 33px; 
+				a,span{ border-bottom: 1px solid @colorLink; padding-bottom: 6px; font-weight: 700; font-size: 0.9em; 
+					letter-spacing: 0.0em;
+					&:hover{border-bottom: 3px solid @colorLinkHover; background-color: none;}
+					&.selected {border-bottom: 3px solid @colorLinkHover; background-color: none; color: @colorLinkHover;}
+				}
+				/*Menu dropdown*/
+				ul{ min-width: 200px;
+					li{ margin: 0; padding: 0; width: 100%;
+						a{border: none; display: block;
+							&:hover{background-color: @colorGrey50 !important; border: none; color: @colorLinkHover !important;}
+						}
+					}
+				}
+			}	
+
+		
+		}
+	}
+}
+
+.header-small{
+	padding: 30px; padding-top: 0px;  z-index: 2; position: absolute; width: 100%;
+	background-color: #fff;
+	ul{
+		li{ border-bottom: 1px solid @colorBorders; 
+			a{  font-weight: 700; font-size: 0.9em; letter-spacing: 1px; display: block; width: 100%;
+				padding: 10px;
+				&:hover{ background-color: @colorBorders;}
+				&.selected {border-bottom: 3px solid @colorLinkHover; background-color: none; color: @colorLinkHover;}
+			}
+		}
+		li.social{ overflow: hidden;
+			a{margin-right: 10px; padding: 10px; float: left; width: 40px;
+				img{ max-width: 20px;}
+			}
+		}	
+	}
+
+}
+
+
+//Contenido
+.main{ 
+  padding-left: 15px; padding-right: 15px; //Para que al resize screen no se pegue al border
+	margin-top: 190px;
+	.content{
+		max-width: 1100px; margin: 0 auto;
+	}
+}
+
+//Web site: PAGES
+section{
+	h1{font-size: 3em; line-height: 1.5em; font-weight: 800; /*semibold*/
+		&.partners{margin-top: 40px;}
+	}
+	h2{font-size: 2em; line-height: 2.7em; font-weight: 800; border-bottom: 1px solid @colorBorders; 
+		margin-bottom: 50px; margin-top: 60px; color: @colorPrincipal;
+		
+	}
+  h3{font-size: 1.5em; line-height: 3em; font-weight: 800; color: @colorPrincipal; /*semibold*/}
+  h4{font-size: 1.3em; line-height: 1.8em; font-weight: 800; margin-top: 40px; color: @colorPrincipal;/*semibold*/}
+	p{font-size: 1.2em;line-height: 1.8em; text-align: justify;
+		img{display: block; margin: 0 auto; border:none; width: 95%; margin-top: 50px; margin-bottom: 50px;}
+	}
+
+	//Ordered list
+	ol{
+		li{ font-size: 1.2em; margin-bottom: 20px;}
+	}
+	//Unordered list
+	ul {
+		list-style: disc;
+		margin-top: 20px; margin-bottom: 20px;
+		padding-left: 15px;
+		font-size: 1.2em; line-height: 1.8em;
+		li{ margin-bottom: 20px;
+
+			//Sublistas
+			ul{
+				list-style: disc; margin-top: 20px; margin-bottom: 20px;
+				padding-left: 30px; font-size: 1.2em; line-height: 1.8em;
+				li {color: black;list-style:none; font-size: 0.9em;}
+				li:before { color: @colorPrincipal; content:"\2022"; font-size:1.5em; 
+  				padding-right:.45em; position:relative; top:.1em; 
+				}
+			}
+
+		}
+
+		//Hack coloured bullets 
+		li {color: black;list-style:none; }
+		li:before {
+  		color: @colorPrincipal;
+  		content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+  		font-size:1.5em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+  		padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
+  		position:relative;
+    	top:.1em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
+		}
+		
+	}
+
+}
+
+//Blog: POSTs and INDEX
+section.blog{
+	.title{ font-size: 1.8em; color: @colorPrincipal; margin-bottom: 30px;
+			i{float: left; font-size: 1.2em; margin-right: 20px;} 
+	}
+
+	padding-top: 30px;
+	.article-header{ font-size: 0.8em; color: @colorPrincipal; padding-top: 10px; padding-bottom: 20px;}
+	.article-meta{ 
+		font-size: 1.3em; font-weight: 600; 
+		.article-category{font-size: 0.8em; color: rgba(0, 0, 0, 0.57); 
+			span{margin-left: 10px; margin-right: 10px;}
+		}
+		.article-category-link{ color: rgba(0, 0, 0, 0.57); 	&:hover{color: @colorPrincipal; text-decoration: underline;} }
+		.article-date{color: rgba(0, 0, 0, 0.57); &:hover{color: @colorPrincipal; text-decoration: underline;}}
+		.article-author{ color: rgba(0, 0, 0, 0.57); 	margin-left: 10px; display: inline; }
+
+	}
+	
+	.narrow{width: 80%;}
+	.article-entry{
+		a{color: @colorPrincipal; &:hover{text-decoration: underline;}}
+	}
+
+	.article-tags{
+		overflow: hidden; margin-top: 20px;
+		i{float: left; margin-right: 20px; color: @colorPrincipal; font-size: 1.8em;}
+		ul.article-tag-list{ float: left;
+			list-style: none; margin: 0; padding: 0;
+			li{ float: left; margin-right: 20px; list-style: none;
+				a{&:hover{text-decoration: underline;}}
+			}
+			li:before { content: none;} //Quito el hack
+		}
+
+	}
+
+	.article-footer{padding-bottom: 30px;}
+
+	//Excerpts...resumenes del index
+	.article-excerpt{
+		.article-header{ font-size: 0.6em; padding-bottom: 10px; padding-top: 0px; 
+			a{color: @colorPrincipal; &:hover{text-decoration: underline;}}
+		}
+		.article-meta{font-size: 0.9em;}
+		.article-entry{font-size: 0.8em;}
+		.article-tags{font-size: 0.8em; i{margin-right: 10px;}; ul{li{margin-right: 10px;}}}
+		.article-footer{padding-bottom: 20px;}
+	}
+
+
+	//Archives ... categories, tags and months
+
+	.archive-year-wrap{a{font-size: 1.3em;} margin-bottom: 10px;}
+	.archive-article-inner{ 
+		.archive-article-header{ line-height: 0.5em; margin-bottom: 30px;
+			h1{line-height: 1.3em; font-size: 1.5em; }
+			.archive-article-date-author{overflow: hidden; padding-top: 10px; padding-bottom: 10px;
+					a{float: left; margin-right: 10px;} div{float: left;}
+			}
+			.archive-article-date{}
+			.archive-article-title{}
+		}
+	}
+}
+
+//Sidebar
+.sidebar{
+	max-width: 250px;
+	float: right; margin-top: 30px;
+	.widget-wrap{
+		border-left: 2px solid @colorBorders; padding: 10px; 
+		margin-bottom: 30px;
+		.widget-title{color: @colorPrincipal; font-weight: 600;}
+		.widget{}
+	}
+}
+
+
+//Footer
+.footer{ 
+  padding-left: 15px; padding-right: 15px; //Para que al resize screen no se pegue al border
+	margin-top: 60px;
+}
+footer{ max-width: 1100px; margin: 0 auto; overflow: hidden; padding-bottom: 60px; 
+	.social{ border-bottom: 1px solid @colorBorders; margin-bottom: 20px; padding-bottom: 10px;
+		ul{ overflow: hidden; 
+			li{float: left; margin-right: 3px;
+				img{ max-width: 30px;}
+			}
+		}
+	}
+
+	.bottom{ overflow: hidden;
+		img{ margin-bottom: 10px; max-width: 100px;}
+		.text{font-size: 0.8em; margin-bottom: 10px; padding-top: 3px; padding-left: 10px;}
+		.rights{font-size: 0.7em; text-align: right; padding-top: 15px;}
+	}
+}
+
+
+//Develpment sites
+
+//Cuadraditos
+.ds-links{ overflow: hidden; margin-top: 130px;
+	a{ 
+		position: relative;
+		margin-right: 50px; margin-bottom: 50px; float: left;
+		width: 300px;  height: 200px; display: block;
+	
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 300px;
+    span{ 
+    	position: absolute; bottom: 0; 
+    	display: block; width: 100%; background-color: rgba(255, 255, 255, 0.9);
+    	padding: 10px; padding-left: 30px; font-size: 1.2em; font-weight: 600;
+    	-webkit-transition: background-color 0.4s linear;
+      -moz-transition: background-color 0.4s linear;
+      -o-transition: background-color 0.4s linear;
+      transition: background-color 0.4s linear;
+     }
+
+  
+    &:hover{
+    	span{background-color: rgba(2, 168, 224, 0.8); color: #fff;}
+    }
+	}
+}
+
+//For each ds
+
+.ds-header{
+	margin-bottom: 40px;
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	span{ 
+    position: absolute; bottom: 0; 
+    display: block; width: 100%; background-color: rgba(2, 168, 224, 0.8); color: #fff;
+    padding: 10px; padding-left: 30px; font-size: 3.2em; font-weight: 600;
+    	
+  }
+}
+
+.partner_bin{ overflow: hidden; display: block; font-size: 1.1em; margin-top: 10px; margin-bottom: 10px;
+	img{ width: 100px; height: 50px; float: left; margin-right: 10px;}
+	span.name{margin-right: 10px; padding-top: 10px; font-weight: 800;}
+	span.text{padding-top: 10px;}
+
+}
+
+//Partners
+.partners-title{ overflow: hidden; margin-bottom: 80px;
+	h1{float: left; margin-bottom: 60px;}
+	img{float: right; }
+}
+
+.partners{ overflow: hidden;
+	a.partner{ width: 250px; text-align: center; border: 1px solid @colorBorders; float: left; margin: 10px; display: block;
+		.logo{img{max-width: 80%; max-height: 80%;} height: 180px; overflow: hidden;}
+		.foot{ padding: 30px;	height: 200px; text-align: left;
+			-webkit-transition: background-color 0.4s linear;
+      -moz-transition: background-color 0.4s linear;
+      -o-transition: background-color 0.4s linear;
+      transition: background-color 0.4s linear;
+			.tipo{font-size: 12px; font-weight: 300; color: #fff; border-bottom: 1px solid #fff; padding-bottom: 10px; margin-bottom: 10px;}
+			.name{ font-size: 14px; font-weight: 500; color: #fff; border-bottom: 1px solid #fff; padding-bottom: 10px;
+					&.small{font-size: 12px;}
+			}
+		}
+		&.industry{ .foot{background-color: @colorIndustry;}}
+		&.academia{ .foot{background-color: @colorAcademia;}}
+		&.research{ .foot{background-color: @colorResearch;}}
+		&.other{ .foot{background-color: @colorOther;}}
+		&.sme{ .foot{background-color: @colorSme;}}
+		&.public{ .foot{background-color: @colorPublic;}}
+		&:hover{
+			.foot{background-color: @colorPrincipal;}
+		}
+	}
+}
+
+
+//Slider
+.slider{ 
+		margin-bottom: 40px;
+		.slider-img {display:none}
+		.w3-display-middle{
+			 visibility:hidden;
+			 -webkit-transition: opacity 1s ease-out;
+       -moz-transition: opacity 1s ease-out;
+       -o-transition: opacity 1s ease-out;
+       transition: opacity 1s ease-out;
+       opacity: 0; 
+		}
+		.w3-left, .w3-right { 
+			 color: #fff; font-size: 20px; cursor:pointer; padding: 6px; padding-left: 15px; padding-right: 15px;
+			 -webkit-transition: background 0.2s ease-out;
+       -moz-transition: background 0.2s ease-out;
+       -o-transition: background 0.2s ease-out;
+       transition: background 0.2s ease-out; 
+
+       background-color: rgba(0,0,0,0.22);
+			&:hover{background-color: rgba(0,0,0,0.6);}
+		}
+	&:hover{	.w3-display-middle { visibility: visible; opacity: 1;}}
+}
+
+.w3-animate-opacity{-webkit-animation:opac 1.5s;animation:opac 1.5s}
+
+.contact{margin-top: 40px; margin-bottom: 40px; //margin: 0 auto; max-width: 800px;
+	.row{margin-bottom: 5px;}
+	.text{ margin-bottom: 20px;}
+	span{font-size: 1.5em; font-weight: bold;}
+	form{margin-bottom: 20px; padding: 0; }
+	img{width: 30px; margin-right: 20px;float: left; padding-top: 10px;}
+	input, textarea{padding: 10px; width: 100%; border: 2px solid @colorBorders; outline: none;
+		&:hover{border: 2px solid @colorLinkHover;}
+		&:focus{border: 2px solid @colorLinkHover;}
+	}
+	input[type="submit"]{background-color: @colorLinkHover; color:#fff;
+		&:hover{cursor: pointer; }
+	}
+	.fill-all{
+		background-color: #FFCDD2; padding: 6px;
+	}
+	.answer{padding: 10px;
+		&.ok{background-color: #CCFF90;}
+		&.ko{background-color: #FFCDD2;}
+	}
+}
+
+.separator{ margin-top: 30px; margin-bottom: 30px;
+	width: 100%; height: 1em; border-bottom: 1px solid @colorGrey200; text-align: center;
+	span {font-size: 0.9em; background-color: #fff; padding: 0 0.8em; font-weight: normal;}
+}
+
+
+//http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+//59 => thanks man. Solve anchor jumps for fix header
+
+#About-ACTIVAGE:before { display: block; content: " "; margin-top: -190px; height: 190px; visibility: hidden; }
+#ACTIVAGE-vision:before { display: block; content: " "; margin-top: -190px; height: 190px; visibility: hidden; }
+#ACTIVAGE-objectives:before { display: block; content: " "; margin-top: -190px; height: 190px; visibility: hidden; }
+#Project-Structure:before { display: block; content: " "; margin-top: -190px; height: 190px; visibility: hidden; }

@@ -1,0 +1,13 @@
+<%page.section = "BLOG";%>
+<!--Content-->
+<div class="w3-row">
+
+ <section class="blog w3-col l8">
+  <%- partial('_partial/archive', {pagination: 3, index: true}) %>
+ </section>
+
+ <div class="w3-col l4 sidebar">
+  <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+ </div>
+
+</div>

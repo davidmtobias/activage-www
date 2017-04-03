@@ -1,0 +1,57 @@
+ El volumen de la unidad F es Developer
+ El n£mero de serie del volumen es: DA97-E33F
+
+ Directorio de F:\Workspace-Sails\activage\assets\images\consortium\logos
+
+12/01/2017  11:36    <DIR>          .
+12/01/2017  11:36    <DIR>          ..
+10/01/2017  18:05            18.397 10.CUP2000.PNG
+10/01/2017  18:09            15.273 11.UNIVERSIDA POLITECNICA DE VALENCIA.png
+05/01/2017  21:06           140.861 12.HOPU.png
+10/01/2017  18:10            11.650 13.National University of Ireland.png
+05/01/2017  15:56           155.674 15.TECNALIA.jpg
+11/01/2017  20:41            35.542 16.MADOPA.PNG
+23/01/2014  19:51           300.106 17.FUNDACIàN VODAFONE ESPA¥A.jpg
+05/01/2017  15:55           884.103 18.CRUZ ROJA ESPA¥OLA.jpg
+10/01/2017  18:21            24.971 19.CSEM-01.png
+14/01/2016  17:40            96.553 1_Medtronic_Iberica.png
+11/01/2017  20:38           220.819 2.ST Microelectronics .png
+10/01/2017  18:22             2.391 20.SAMSUNG.png
+10/01/2017  18:23            39.224 21.TERCERA EDAD ACTIVA.png
+10/01/2017  18:25             6.871 22.InnDEA.png
+10/01/2017  18:28            35.376 23.Consiglio Nazionale Delle Ricerche-01.png
+10/01/2017  18:27            30.604 23.Consiglio Nazionale Delle Ricerche.svg
+05/01/2017  16:32           491.401 24.Azienda USL di Parma.JPG
+10/01/2017  18:36            12.981 25.Universita degli Studi di Parma.png
+10/01/2017  18:40             9.895 26.AURORA DOMUS .jpg
+10/01/2017  18:45             3.540 27.WIND.png
+11/01/2017  20:38           877.394 28.TECHNOSENS.PNG
+11/01/2017  20:41            39.013 29.Departement de L'isere.png
+10/01/2017  17:48             3.273 3.Televes SA.png
+11/01/2017  20:41            10.518 30.IMA.png
+11/01/2017  20:39           160.753 31.KORIAN.png
+10/01/2017  18:55             5.835 32.ATENZIA.png
+10/01/2017  18:56            24.204 33.WOQUAZ.jpg
+10/01/2017  18:58            11.422 35.SERGAS.png
+10/01/2017  19:00             6.507 36.GESMED.png
+10/01/2017  08:51            12.169 37.CitiesNet.jpg
+11/01/2017  09:07            10.753 38.GNOMON.png
+10/01/2017  08:51         4.466.748 39.MUNICIPALITY OF METAMORFOSIS.tif
+10/01/2017  16:39            43.208 4.TSB-MYSPHERA.png
+11/01/2017  16:46             3.796 40.INFOTRIP.png
+10/01/2017  08:51            53.706 41.Municipality of Pileas.jpg
+10/01/2017  15:07            64.294 42.ICCS.png
+10/01/2017  16:31            12.552 43.SE Innovations Oy.png
+10/01/2017  19:00            29.800 44.GoodLife Technology.jpg
+10/01/2017  16:35            28.003 45.EHOIVA.jpg
+10/01/2017  16:33            79.091 46.Turku University.png
+10/01/2017  19:05            10.267 47.LEEDS CITY COUNCIL.png
+10/01/2017  21:24             8.049 48.UNIVERSITY OF SURREY.png
+10/01/2017  17:51             7.934 5.Universidad Polit‚cnica de Madrid.png
+10/01/2017  17:32            70.783 6.FRAUNHOFER.png
+11/01/2017  20:38            71.004 7.CEA.png
+11/01/2017  16:46             8.432 8.CERTH.png
+10/01/2017  18:01             3.196 9.IBM.png
+12/01/2017  11:36                 0 logs.txt
+              48 archivos      8.658.936 bytes
+               2 dirs  98.980.274.176 bytes libres

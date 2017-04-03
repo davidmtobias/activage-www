@@ -1,0 +1,15 @@
+<%page.section = "BLOG";%>
+<!--Content-->
+<div class="w3-row">
+
+ <section class="blog w3-col l8">
+  <div class="title"> <i class="fa fa-tag"></i> <%=page.tag%></div>
+  
+  <%- partial('_partial/archive', {pagination: config.tag, index: true}) %>
+ </section>
+
+ <div class="w3-col l4 sidebar">
+  <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+ </div>
+
+</div>
